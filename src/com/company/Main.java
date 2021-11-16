@@ -46,5 +46,6 @@ public class Main {
         System.out.println("max "+ building.getMaxResidentFloor());
         System.out.println("max "+ building.getMaxResidentAppartement());
         System.out.println(building.getResidentById(7));
+        System.out.println();
     }
 }
