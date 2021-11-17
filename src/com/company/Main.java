@@ -3,6 +3,15 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        Building building = Main.init();
+
+        System.out.println("max "+ building.getMaxResidentFloor());
+        System.out.println("max "+ building.getMaxResidentAppartement());
+        System.out.println(building.getResidentById(7));
+        System.out.println();
+    }
+
+    public static Building init() {
         Resident res1 = new Resident(1, "Vahram", "Papazyan");
         Resident res2 = new Resident(2, "Vahan", "Papazyan");
         Resident res3 = new Resident(3, "Varduhi", "Papazyan");
@@ -43,9 +52,6 @@ public class Main {
         building.add(floor2);
         building.add(floor3);
 
-        System.out.println("max "+ building.getMaxResidentFloor());
-        System.out.println("max "+ building.getMaxResidentAppartement());
-        System.out.println(building.getResidentById(7));
-        System.out.println();
+        return  building;
     }
 }
