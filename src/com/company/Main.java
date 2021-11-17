@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
         Building building = Main.init();
 
-        System.out.println("max "+ building.getMaxResidentFloor());
-        System.out.println("max "+ building.getMaxResidentAppartement());
-        System.out.println(building.getResidentById(7));
+        System.out.println("The floor with max residents: "+ building.getMaxResidentFloor());
+        System.out.println("The appartement with max residents: "+ building.getMaxResidentAppartement());
+        System.out.println("The resident with the given id: " + building.getResidentById(7));
         System.out.println();
     }
 
