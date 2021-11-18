@@ -31,7 +31,7 @@ public class Floor {
 
         for (Appartement appartement : appartements) {
             if (appartement.getResidentById(id) == null) {
-                throw new IllegalArgumentException("You don't have such resident in given floor");
+                continue;
             }
             else if (appartement.getResidentById(id).getId() == id) {
                 resident = appartement.getResidentById(id);

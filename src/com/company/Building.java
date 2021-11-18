@@ -33,8 +33,15 @@ public class Building {
     public Resident getResidentById(int id) {
         Resident resident = new Resident();
 
-
-
+        for (Floor floor : floors) {
+            if (floor.getResidentById(id) == null) {
+                continue;
+            }
+            else if (floor.getResidentById(id).getId() == id) {
+                resident = floor.getResidentById(id);
+                break;
+            }
+        }
 
         return resident;
     }

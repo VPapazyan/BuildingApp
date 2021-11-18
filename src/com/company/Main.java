@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
         Building building = Main.init();
 
-        System.out.println("The floor with max residents: "+ building.getMaxResidentFloor());
-        System.out.println("The appartement with max residents: "+ building.getMaxResidentAppartement());
-        System.out.println("The resident with the given id: " + building.getResidentById(7));
+//        System.out.println("The floor with max residents: "+ building.getMaxResidentFloor());
+//        System.out.println("The appartement with max residents: "+ building.getMaxResidentAppartement());
+        System.out.println("The resident with the given id: " + building.getResidentById(9));
         System.out.println();
     }
 
@@ -52,6 +52,6 @@ public class Main {
         building.add(floor2);
         building.add(floor3);
 
-        return  building;
+        return building;
     }
 }
